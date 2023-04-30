@@ -8,16 +8,6 @@ from scipy.odr import *
 # -------------------Geradenfit--------------------
 def geradenfit(x, y, x_err, y_err):
     print('---------------Geradenfit----------------')
-    '''
-
-    :param x: 1/lambda^2
-    :param y: n_index
-    :param x_err: dx
-    :param y_err: dn
-    :param n: number of data points
-
-    '''
-
     # Mittelwert
     def mittel(x, n):
         return (1 / n) * np.sum(x)
@@ -91,16 +81,7 @@ def geradenfit(x, y, x_err, y_err):
 
 def multifit(x, y, x_err, y_err):
     print('---------------Geradenfit----------------')
-    '''
-
-    :param x: 1/lambda^2
-    :param y: n_index
-    :param x_err: dx
-    :param y_err: dn
-    :param n: number of data points
-
-    '''
-
+ 
     # Mittelwert
     def mittel(x, n):
         return (1 / n) * np.sum(x)
