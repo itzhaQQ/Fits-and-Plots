@@ -156,12 +156,11 @@ x_arrays = np.array([x_1, x_2, x_n], dtype=object)
 x_err_arrays = np.array([x_err_1, x_err_2, x_err_n], dtype=object)
 y_arrays = np.array([y_1, y_2, y_n], dtype=object)
 y_err_arrays = np.array([y_err_1, y_err_2, y_err_n], dtype=object)
-
-colors = np.array(['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf'])   # array with colors
-
 """
 
 def multifit_plot(x_array, y_array, x_err_array, y_err_array, dictarray):
+    # colors (change as you like)
+    colors = np.array(['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf'])   # array with colors
     # plot
     # use r'' to be able to use LaTeX Code, LaTeX Code needs to be in $$
     fig, ax = plt.subplots(dpi=500)
